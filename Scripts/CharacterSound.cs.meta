@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 02c9e72c6c2dca94192ad24e34d72cd9
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - _takeCoinAudioClip: {fileID: 8300000, guid: 44709d6992168a14186f3edadcda75ce, type: 3}
+  - _runAudioClip: {fileID: 8300000, guid: 18cbd80570664074dae434ee9f836367, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
