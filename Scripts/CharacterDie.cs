@@ -1,3 +1,4 @@
+using Newtonsoft.Json.Linq;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -18,7 +19,7 @@ public class CharacterDie : MonoBehaviour
         {
             _isAlive = false;
 
-            GetComponent<Animator>().SetTrigger("Die");
+            GetComponent<Animator>().SetTrigger(CharacterAnimationsController.States.Die);
             GetComponent<CharacterSound>().PlayDieSound();
             GetComponent<Collider2D>().enabled = false;
             GetComponent<Rigidbody2D>().gravityScale = 0;

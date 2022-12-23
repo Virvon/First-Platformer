@@ -4,7 +4,7 @@ using System.Runtime.CompilerServices;
 using UnityEngine;
 
 [RequireComponent(typeof(CharacterSound))]
-public class TakeCoin : MonoBehaviour
+public class TakingCoin : MonoBehaviour
 {
     private CharacterSound _characterSound;
 

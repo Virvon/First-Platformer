@@ -37,10 +37,7 @@ public class EnemyWaypointMovement : MonoBehaviour
 
             Transform newxtTarget = _points[_currentPoint];
 
-            if (newxtTarget.position.x > transform.position.x)
-                _renderer.flipX = true;
-            else
-                _renderer.flipX = false;
+            _renderer.flipX = (newxtTarget.position.x > transform.position.x);
         }
     }
 }

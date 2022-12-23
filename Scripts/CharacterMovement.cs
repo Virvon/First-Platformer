@@ -48,7 +48,7 @@ public class CharacterMovement : MonoBehaviour
 
             _characterSound.PlayRunSound(isMoving);
 
-            _animator.SetFloat("Speed", animatorSpeed);
+            _animator.SetFloat(CharacterAnimationsController.Params.Speed, animatorSpeed);
 
             transform.Translate(direction * _speed * Time.deltaTime, 0, 0);
         }

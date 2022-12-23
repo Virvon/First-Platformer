@@ -37,20 +37,8 @@ public class CharacterSound : MonoBehaviour
 
     private void TryPlayClip(AudioClip targetClip)
     {
-        AudioClip clip = null;
-
-        if(targetClip == _takeCoinAudioClip || targetClip == _dieAudioClip)
-        {
-            _audioSource.loop = false;
-            clip = targetClip; 
-        }
-        else
-        {
-            _audioSource.loop = true;
-            clip = targetClip;
-        }
-
-        _audioSource.clip = clip;
+        _audioSource.loop = !(targetClip == _takeCoinAudioClip || targetClip == _dieAudioClip);
+        _audioSource.clip = targetClip;
         _audioSource.Play();
     }
 
