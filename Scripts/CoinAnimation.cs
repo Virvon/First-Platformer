@@ -33,6 +33,6 @@ public class CoinAnimation : MonoBehaviour
     {
         _startPosition = transform.position;
 
-        Coroutine animation = StartCoroutine(Animate());
+        StartCoroutine(Animate());
     }
 }
